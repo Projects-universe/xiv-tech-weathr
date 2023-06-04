@@ -15,7 +15,7 @@ function App() {
         // console.log({ cities })
         setIsLoading(true)
         try {
-            const res = await axios.post('http://localhost:5000/getWeather', {
+            const res = await axios.post('https://xiv-tech-backend-project.onrender.com/getWeather', {
                 cities: ref.current.value.split(' ')
             })
             console.log(res.data.weather)
